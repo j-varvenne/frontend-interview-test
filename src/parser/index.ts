@@ -21,7 +21,7 @@ export class PolynomialParser {
     private parseAdd(): ASTNode {
         let left = this.parseProd();
         this.whitespace();
-        while (!this.eof()) {
+        while (this.peek() == '+') {
             this.expect('+');
             this.whitespace();
             const right = this.parseProd();
@@ -39,7 +39,7 @@ export class PolynomialParser {
     private parseProd(): ASTNode {
         let left = this.parseTerm();
         this.whitespace();
-        while (!this.eof()) {
+        while (this.peek() == '*') {
             this.expect('*');
             this.whitespace();
             const right = this.parseTerm();
