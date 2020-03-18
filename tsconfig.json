@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "importHelpers": true,
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "allowUnreachableCode": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "dist/",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "dom",
+            "es2015",
+            "es2016.array.include"
+        ],
+        "baseUrl": "src/",
+        "paths": {
+            "@/*": [
+                "*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+    ]
+}

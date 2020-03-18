@@ -1,0 +1,23 @@
+.expression {
+    font-size: 24px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.indeterminate {
+    color: black;
+}
+
+.number {
+    color: blue;
+}
+
+.constant {
+    color: grey;
+}
+
+.exponent {
+    font-size: 10px;
+    position: relative;
+    bottom: 3ex;
+}
